@@ -1,0 +1,475 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body, html {
+    background-color: #1d1d1d;
+    background-color: #252627;
+    background-color: #212223;
+    background-color: #1b1b1c;
+    background-color: #161616;
+    padding: 0px;
+    color: #fff;
+    font-family: monospace,monospace;
+    /* font-family: 'Press Start 2P', cursive; */
+    font-size: 1em;
+    font-size: 19px;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 300px;
+}
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+a:hover {
+    color: #252627;
+    background-color: #fff;
+}
+pre {
+    overflow: hidden;
+}
+.logo {
+    position: absolute;
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    z-index: 1;
+    display: none;
+}
+#cursor {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    height: 23px;
+    width: 10px;
+    z-index: 99;
+}
+.terminal-container {
+    width: 100%;
+    padding-top: 200px;
+    position: relative;
+    z-index: 2;
+}
+.terminal, .input {
+    max-width: 850px;
+    margin: auto;
+    display: block;
+    padding: 30px;
+    padding-bottom: 0px;
+    position: relative;
+}
+.terminal {
+    overflow-y: none;
+}
+.input {
+    padding-top: 0px;
+    margin-bottom: 40px;
+}
+.input {
+    position: relative;
+}
+.grey {
+    color: grey;
+}
+
+input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+    padding: 0px;
+    padding-right: 0px;
+    display: inline-block;
+    font-size: inherit;
+    border: 0;
+    outline: none;
+    width: 90%;
+    max-width: 850px;
+    -webkit-appearance: none;
+    position: absolute;
+}
+#input_front {
+    background-color: #161616;
+    z-index: 50;
+}
+#input {
+    z-index: 2;
+}
+/*
+    Background
+*/
+.background {
+    position: fixed;
+    top: 0px;
+    margin: auto;
+    width: 100%;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    text-align: center;
+}
+.space {
+    height: 100%;
+    margin: auto;
+    max-width: 900px;
+    border-left: 5px solid #161616;
+    border-right: 5px solid #161616;
+}
+/*
+    Full popup
+*/
+.full-pop {
+    position: absolute;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: table;
+    left: 0px;
+    top: 0px;
+    vertical-align: middle;
+    text-align: center;
+    z-index: 99;
+    display: none;
+}
+.full-pop-show {
+    display: table;
+}
+.full-pop-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 99;
+}
+.full-pop-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+.full-pop-content span {
+    display: inline-block;
+    padding: 10px;
+    
+    position: relative;
+    z-index: 99;
+    max-width: 80%;
+}
+.full-pop-content-container {
+    display: table;
+    vertical-align: middle;
+    text-align: center;
+}
+.full-pop-content iframe {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.totback {
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+}
+
+.img-pop {
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%; 
+    background-position: center center;
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+/*
+     FILE ARCHIVED ON 03:33:14 Mar 11, 2017 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 17:57:08 Jan 12, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  load_resource: 555.436
+  PetaboxLoader3.resolve: 104.735
+  captures_list: 800.871
+  LoadShardBlock: 746.536 (3)
+  esindex: 0.016
+  RedisCDXSource: 34.3
+  exclusion.robots.policy: 0.12
+  CDXLines.iter: 16.598 (3)
+  exclusion.robots: 0.13
+  PetaboxLoader3.datanode: 1030.818 (4)
+*/
