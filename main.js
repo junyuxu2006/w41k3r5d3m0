@@ -170,7 +170,7 @@ main.addPosts = function(callback) {
 	});		
 }
 main.checkCodeValidity = function(string, callback) {
-	$.post("https://www.w41k3r.ga/server/invites.json", { invite: string }, function(json) {
+	$.post(main.worldUrl+"/invites.json", { invite: string }, function(json) {
 		typeof callback === 'function' && callback(json);
 	});
 }
