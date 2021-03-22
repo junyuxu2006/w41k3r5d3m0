@@ -170,7 +170,7 @@ main.addPosts = function(callback) {
 	});		
 }
 main.checkCodeValidity = function(string, callback) {
-	$.post(main.worldUrl+"/invites.json", { invite: string }, function(json) {
+	$.post("/invites.json", { invite: string }, function(json) {
 		typeof callback === 'function' && callback(json);
 	});
 }
