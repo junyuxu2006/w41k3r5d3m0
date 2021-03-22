@@ -14,7 +14,7 @@ if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; re
 var terminal = terminal || {};
 var main = main || {};
 
-main.worldUrl = "";
+main.worldUrl = "https://www.w41k3r.ga/";
 main.div = $(".terminal");
 terminal.namn = "Anonymous";
 main.memory = [];
